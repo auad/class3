@@ -5,11 +5,15 @@ $(document).ready(function(){
 
 	$('#btnStep1').click(function(){
 		$('#step1').show();
-		$('#step2').hide();		
+		$('#step2').hide();	
+		currentStep = 1;
+		// send something to server
 	});
 
 	$('#btnStep2').click(function(){
 		$('#step1').hide();
 		$('#step2').show();
+		currentStep = 2;
+		// send something to server
 	});
 });
